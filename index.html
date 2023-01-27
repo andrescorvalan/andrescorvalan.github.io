@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>  
+    <header>
+        <h1>Curriculum Vitae</h1>
+    </header>
+    <section id="contenido">
+        <!--
+            Para agregar otro tipo de informacion (sea Paciones):
+            En la section "menu", agregar la nueva opcion con:
+                <li class="menuItem" id="Paciones">Mis Paciones</li>
+            En la section datosTodos agregar el ancla :
+                <a class="ancla" href="#Paciones">Paciones</a>
+            Dentro de la section "datos" (despues de ancla!), añadir:
+                <section id='datosPaciones'>
+                    <a name="Paciones">
+                    la nueva informacion
+                </section>
+            De esta manera NO ES NECESARIO MODIFICAR EL SCRIPT JS
+        -->
+        <section id="menu">    
+            <img id="foto" src="img/fotos/andres0.png" alt="Foto de la persona">
+            <ul>
+                <li class="menuItem" id="Personales">Datos Personales</li>
+                <li class="menuItem" id="Contacto">Contacto</li>
+                
+                <li class="menuItem" id="Educacion">Educación</li>
+                <li class="menuItem" id="Habilidades">Habilidades</li>
+                <li class="menuItem" id="Experiencias">Experiencias</li>
+                
+                <li class="menuItem" id="SobreMi">Sobre Mi</li>
+                <li class="menuItem" id="Todos">Expandir todo</li> <!--El id DEBE ser Todos
+                si se desea esta funcionalidad-->
+            </ul>
+        </section>
+        <section id="datos">
+            <section id="datosTodos" class="ancla">
+                <img src="img/ancla.png">
+                <a href="#personales">
+                    <i class="fa-solid fa-user" title="Mis datos personales"></i>
+                </a>
+                <a href="#contacto">
+                    <i class="fa-solid fa-envelope" title="¿Te quieres comunicar conmigo?"></i>
+                </a>
+                <a href="#educacion">
+                    <i class="fa-solid fa-graduation-cap" title="Datos sobre mi educación"></i>
+                </a>
+                <a href="#habilidades">
+                    <i class="fa-solid fa-gear" title="Mis habilidades"></i>
+                </a>
+                <a href="#experiencias">
+                    <i class="fa-sharp fa-solid fa-id-card" title="Mis experiencias laborales"></i>
+                </a>
+                <a href="#sobremi">
+                    <i class="fa-solid fa-face-smile" title="Datos sobre mi (infancia, educación, familia)"></i>
+                </a>
+            </section>
+            <section id="datosPersonales">
+                <a name="personales"></a>
+                <h2><i class="fa-solid fa-user"></i> Datos Personales</h2>
+                <article class="marcoInfo">
+                    <p><b>Nombre: </b>Andrés Leandro.</p>
+                    <p><b>Apellido: </b>Corvalan.</p>
+                    <p><b>Fecha de nacimiento: </b>06 de agosto de 1977.</p>
+                    <p><b>Edad: </b>45 años.</p>
+                </article>
+            </section>     
+            <section id="datosContacto">
+                <a name="contacto"></a>
+                <h2> <i class="fa-solid fa-envelope"></i> Contacto</h2>
+                <article class="marcoInfo">
+                    <p><b>Email: </b>alcorvalan@gmail.com.</p>
+                    <p><b>Celular: </b>294-4814948.</p>
+                    <p><b>Domicilio: </b>Belgrano 386 - Maquinchao - Río Nerio.</p>
+                </article>
+            </section>       
+            <section id="datosEducacion">
+                <a name="educacion"></a>
+                <h2><i class="fa-solid fa-graduation-cap"></i> Educación</h2>
+                <article class="marcoInfo">
+                    <h3>Primario:</h3>
+                    <ul> 
+                        <li><p><b>Establecimiento: </b>Escuela Primaria N° 4.</p></li>
+                        <li><p><b>Localidad: </b>Maquinchao.</p></li>
+                    </ul>
+                    <h3>Secundario:</h3>
+                    <ul> 
+                        <li><p><b>Establecimiento: </b>E.N.E.T N° 1.</p></li>
+                        <li><p><b>Localidad: </b>Gral. Roca.</p></li>
+                        <li><p><b>Titulo: </b>Tecnico en Computación.</p></li>
+                        <li><p><b>Promedio: </b>8,50.</p></li>
+                    </ul>
+                    <h3>Universidad:</h3>
+                    <ul>
+                        <li><p><b>Establecimiento: </b>U.N.C (Univeridad Nacional del Comahue).</p></li>
+                        <li><p><b>Localidad: </b>Neuquén.</p></li>
+                        <li><p><b>Titulo: </b>Analista en Computación.</p></li>
+                        <li><p><b>Promedio: </b>8,55.</p></li>
+                    </ul>    
+                </article>             
+            </section>
+            <section id="datosHabilidades">
+                <a name="habilidades"></a>
+                <h2><i class="fa-solid fa-gear"></i> Habilidades</h2>
+                <article class="marcoInfo">
+                    <h3>Formación académica:</h3>
+                    <ul> 
+                        <li><p><b>Lenguajes de programación: </b>Pascal, C, C++, Java, Smalltalk, Assembler, Prolog, C++, Haskell, etc.</p></li>
+                        <li><p><b>Base de Datos Relacional: </b>MySQL.</p></li>
+                    </ul>
+                    <h3>Formación autónoma:</h3>
+                    <ul>
+                        <li><p><b>Sistemas Operativos: </b>Microsotf Windows, GNU Linux (Desktop y Server).</p></li>
+                        <li><p><b>Desarrollo Web: </b>HTML5, CSS3, PHP.</p></li>
+                        <li><p><b>Ofimática: </b>Microsoft Office, OpenOffice/LibreOffice.</p></li>
+                        <li><p><b>Mantenimiento de PC (Software y Hardware): </b>Armado de PC, Mantenimiento de sistemas Windows y Linux.</p></li>
+                        <li><p><b>Sistema Educativo: </b>Armado de redes, Instalacion de servidor Linux, dictado de clases de Informatica Contable, Tecnologia y Matemática.</p></li>
+                        <li><p><b>Actividad Privada: </b>Armado de redes, Instalacion y administración de servidor Linux.</p></li>
+                    </ul>
+                </article>
+            </section>
+            <section id="datosExperiencias">
+                <a name="experiencias"></a>
+                <h2><i class="fa-sharp fa-solid fa-id-card"></i> Experiencias Laborales</h2>
+                <article class="marcoInfo">
+                    <h3>Sistema educativo:</h3>
+                    <ul> 
+                        <li>
+                            <p><b>Escuela Secundaria ESRN Nº 57:</b></p>
+                            <p>Ayudante de Cl. y TP en informática (TIC) (desde 2006 a la fecha).</p>
+                            <p>Profesor de “Informática Contable I y II” (desde 2014 hasta 02/2018).</p>
+                            <p>Profesor de “Tecnología” (ciclo lectivo 2016).</p>
+                            <p>Profesor  de “Matemática”  (desde el ciclo lectivo 2019 a la fecha).</p>
+                        </li>
+                        <li>
+                            <p><b>Escuela Primaria Nº 4:</b></p>
+                            <p>Referente Escolar TIC. (ciclo lectivo 2018).</p>
+                        </li>
+                        <li>
+                            <p><b>Escuela primaria de JE Nº 363:</b></p>
+                            <p>Referente Escolar TIC. (desde ciclo lectivo 2018 a la fecha ).</p>
+                        </li>
+                    </ul>
+                    <h3>Actividad Privada:</h3>
+                    <ul> 
+                        <li><p>Cooperativa Telefónica Maquinchao (desde 2004 hasta 2015).</p></li>
+                        <li><p>Cooperativa Telefónica Los Menuco (desde 2011 hasta 2018).</p></li>
+                        <li><p>Ente de Desarrollo de la Línea y Región Sur de la Provincia de Rio Negro. Desarrollo e implementacion de software.</p></li>
+                    </ul>
+                </article>
+            </section>
+            <section id="datosSobreMi">
+                <a name="sobremi"></a>
+                    <h2><i class="fa-solid fa-face-smile"></i> Sobre mí</h2>
+                    <article class="marcoInfo">
+                        <h3>Mi Infancia</h3>
+                        <p>
+                            Nací en Maquinchao, un pequeño pueblo en la provinicia de Río Negro, el 6 
+                            de agosto de 1977. Pasé mi infancia allí, hasta los 10 años, y por 
+                            ello fue muy buena, sin saber lo que era 
+                            estar preocupado, jugando con muchos amigos en un ambiente seguro y 
+                            tranquilo ... vida de pueblo.
+                        </p>
+                        <img class="fotoSobreMi" src="img/fotos/andres1.png">
+                        <img class="fotoSobreMi" src="img/fotos/andres2.png">
+                    </article>
+                    <article class="marcoInfo">
+                        <h3>Mi educación</h3>
+                        <p> 
+                          Empecé el primario en la escuela del pueblo, en aquel momento la única, 
+                          la N° 4. A los 10 años nos mudamos a General Roca y continué en la escuela 
+                          N° 253. El cambio de ambiente (pueblo-ciudad) no fue fácil pero favoreció 
+                          mi educación, pues tuve la posibilidad de hacer el secundario en 
+                          la ENET N°1, con la orientación "Computación". Al egresar ya tenía las 
+                          herramientas para comenzar a trabajar, aunque gracias al esfuerzo familiar 
+                          no fue necesario e inicié la carrera Analista en Computación en la 
+                          Universidad Nacional del Comahue, que se dictaba en Neuquén. 
+                          Aun recuerdo los eternos viajes diarios en colectivo (3 hs), 
+                          todo un esfuerzo personal pero también económico, 
+                          años siguientes hubo que elegir qué día ir.
+                        </p>
+                        <p>
+                            Finalizada la carrera de Analista, con muy buen rendimiento académico, 
+                            seguí con algunas materias de la Licenciatura en Ciencias de la 
+                            Computación, que lamentablemente no terminé (deuda pendiente!) debido 
+                            a que decidí volver a mi pueblo; conseguí trabajo, con mi pareja 
+                            iniciamos una familia, en fin... situaciones que hicieron muy difícil 
+                            poder continuar esa carrera.
+                        </p>
+                        <p>
+                            Pero nunca dejé de estudiar, me he vuelto autodidacta, hoy en día solo 
+                            necesitas acceso a Internet para obtener información.
+                        </p>
+                        <img class="fotoSobreMi" src="img/fotos/egresado.jpeg">
+                    </article>
+                    <article class="marcoInfo">
+                        <h3>Mi familia</h3>
+                        <p>
+                            Mi familia está constituida por mi pareja Leticia Bargas, mis hijos 
+                            Franco y Fiorella, y mis mascotas (Eros, Mateo, Cachorra y Tigresa).
+                        </p>
+                        <img class="fotoSobreMi" src="img/fotos/conlety.jpeg">
+                        <img class="fotoSobreMi" src="img/fotos/connenes.jpeg">
+                        <img class="fotoSobreMi" src="img/fotos/franco.jpeg">
+                        <img class="fotoSobreMi" src="img/fotos/fiorella.jpeg">
+                        <img class="fotoSobreMi" src="img/fotos/cachorra.jpeg">
+                        <img class="fotoSobreMi" src="img/fotos/mateo.jpeg">
+                        <br>
+                        <img class="fotoSobreMi" src="img/fotos/tigresa.jpeg">
+                        <img class="fotoSobreMi" src="img/fotos/eros.jpeg">
+                    </article>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <p>Diseñado e implementado por Andrés Leandro Corvalan</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/634d68c9fe.js" crossorigin="anonymous"></script>
+</body>
+</html>
