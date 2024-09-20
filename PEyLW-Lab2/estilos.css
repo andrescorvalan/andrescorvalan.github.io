@@ -1,0 +1,83 @@
+@font-face {
+	font-family: "Exo-Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Exo-Regular"),url(../fonts/Exo-Regular.otf) format('opentype');
+}
+* {
+    border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: black;
+	font-family: "Exo-Regular", Helvetica, Verdana;
+	font-size: 1em;
+	margin: 2px auto;
+	text-align: center;
+    margin:1em;
+}
+header, nav, main, footer {
+	border-color: rgb(65, 63, 63);
+	border-style: solid;
+	border-width: 0px 2px 0px 2px;
+    background-color:#85c1ec;
+}
+header {
+	border-radius: 0.5em 0.5em 0 0;
+    border-top-width: 2px;
+}
+nav 
+{
+    text-align: left;
+    list-style-type: none;
+}
+nav *
+{
+    text-align: left;
+    color: #B45F04;
+    text-decoration: none;
+	padding: 0.2em;
+}
+nav ul li {
+	background-color: rgb(226, 224, 224);
+	border: 2px solid green;
+    display: inline-block;
+	list-style-type: none;
+}
+nav ul li:hover {
+    background-color: black;
+}
+main {
+    background-color: rgb(251, 225, 146);
+    padding: 1em;
+    border-width: 2px;
+    min-height: calc(100vh - 5em);
+}
+footer {
+	border-radius: 0 0 0.5em 0.5em;
+	border-bottom-width: 2px;
+}
+#datosAcercaDe {
+    display: flex;
+}
+#datosPersonales {
+	width: 30%;
+}
+#datosGenerales {
+	text-align: left;
+	width:70%;
+}
+.fotoSobreMi {
+    border: 1px solid blue;
+	border-radius: 0.5em;
+}
+article.marcoInfo {
+	background-color: #c1daf7;
+   	box-shadow: 0.5em 0.5em 0.5em black;
+   	border: 1px solid black;
+	display: block;
+	margin-bottom: 1em;
+  	padding: 1em;
+}
