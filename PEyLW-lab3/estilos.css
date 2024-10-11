@@ -50,6 +50,7 @@ nav ul li:hover {
     background-color: black;
 }
 main {
+	text-align: left;
     background-color: rgb(251, 225, 146);
     padding: 1em;
     border-width: 2px;
