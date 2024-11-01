@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Leandro Corvalan</title>
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>   
+</head>
+<body>
+    <header>
+        <h1>Pagina personal de Andrés Leandro Corvalan</h1>
+        <img src="img/logo_curza.png" alt="logoCURZA">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercade.html">Acerca de ...</a></li>
+        </ul>
+    </nav>
+    <div id="porcionFija"></div>
+    <main>
+        <article class="marcoInfo">
+        <h2>Laboratorio 2</h2>
+        <p>Teniendo en cuenta el procedimiento indicado en 
+            <a href="https://github.com/uncoma-curza-lab/PEyLW-2024/blob/main/README.md"> 
+            Readme.md</a> hacer una primera página web de presentación del alumno. Reemplazar
+            "Nombre y Apellido" por lo que corresponda. El archivo "index.html" deberá contener 
+            la estructuraautochivo debe llamarse "acercade.html". El header debe incluir el título de 
+            la página conteniendo nombre y apellido e indicando que es la página personal. 
+            En acercade.html debe incluirse una breve biografía y una foto, no tiene por qué ser 
+            la del alumno pero es recomendable que así sea. Las fotos pueden enlazarse a sitios 
+            externos o guardarla en un subdirectorio llamado img/. El footer debe contener 
+            información de copyright y la dirección de la universidad o el nodo correspondiente.
+        </p>
+        <p>Nav debe enlazar a Inicio ("index.html") y Acerca de ("acercade.html) al menos, puede
+            añadir más enlaces de desearlo.
+        </p>
+        <p>Por último, enlazar el mismo archivo CSS con los estilos básicos para dar un primer 
+            formato a sus páginas html. El archivo debe estar en el mismo directorio base de sus
+            páginas.
+        </p>
+        </article>
+        <article class="marcoInfo">
+        <h2>Laboratorio 3</h2>
+        <p></p>Crear una página nueva que deberá estar enlazada con la página principal del laboratorio anterior como “Contacto”
+        En esta página se debe crear un formulario que contenga los siguientes campos:</p>
+        <ul>
+            <li>Nombre (longitud máxima 20 caracteres), requerido.</li>
+            <li>Apellido (longitud máxima 20 caracteres).</li>
+            <li>Email, requerido.</li>
+            <li>Teléfono, debe contar con una ayuda que se borre al hacer clic en el campo.</li>
+            <li>Edad: mínimo 16 y máximo 120 años.</li>
+            <li>Dirección: campo de texto libre.</li>
+            <li>Provincia: texto, debe ser libre pero las provincias patagónicas deberán estar incluidas y sugerirse al usuario con una lista.</li>
+            <li>Código postal: controlado con una expresión regular que incluya A1234ABC.</li>
+            <li>Elección de método preferido de contacto entre “correo electrónico”, “correo postal” o “teléfono” (excluyentes, usar radio button), 
+                por defecto debe salir “correo electrónico” como preferido.</li>
+            <li>Elección del tipo de suscripción entre: noticias, promociones, alertas y eventos, el usuario debe poder elegir más de una. 
+                Alertas debe estar seleccionado por defecto. Usar checkbox.</li>
+            <li>Incluir un botón de cargar (por ahor no hará nada).</li>
+            <li>Luego incluir una tabla vacía con dos columnas, en la columna izquierda deben ir los mismos ítems del formulario (títulos) y la de 
+                la derecha vacía (se rellenará la opción al apretar el botón de cargar cuando veamos javascript).</li>
+        </ul>
+        </article>
+        <a href="#porcionFija"> <img id="arriba" src="img/flecha_arriba.png" alt="logoCURZA"></a>
+    </main>
+    <footer>
+        <img src="img/cc-by-sa.png" alt="CC-BY-SA" width="100">
+        <p>Universidad Nacional de Comahue - Zona Atlántica - Nodo Maquinchao - Andr&eacute;s Corvalan</p>
+    </footer>
+</body>
+</html>
