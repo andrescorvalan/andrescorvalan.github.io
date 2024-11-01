@@ -1,3 +1,21 @@
+@font-face {
+	font-family: "Exo-Regular";
+	font-style: normal;
+	font-weight: normal; 	 
+	src: local("Exo-Regular"),url(fonts/Exo-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: "Sofia-Regular";
+	font-style: normal;
+	font-weight: normal; 	 
+	src: local("Sofia-Regular"),url(fonts/Sofia-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: "Satisfy-Regular";
+	font-style: normal;
+	font-weight: normal; 	 
+	src: local("Satisfy-Regular"),url(fonts/Satisfy-Regular.ttf) format('truetype');
+}
 * {
     border: 0;
     box-sizing: border-box;
@@ -19,7 +37,7 @@ header, nav, main, footer {
     border-left-width: 2px;
     width:100%;
     padding: 0.5em 1em;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 #porcionFija {
@@ -34,12 +52,15 @@ header {
     height:100px;
     margin-top: 0em;
     position: fixed;
-    display:;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:center;
 }
 
-header * {
-    display: inline-block;
-    vertical-align: middle;
+header h1 {
+    font-family: "Satisfy-Regular", Helvetica, Verdana; 
+    font-size: 3em;
+    text-shadow: 0.1em 0.1em 0.1em rgb(29, 31, 12);
 }
 
 header img {
@@ -80,6 +101,7 @@ nav ul li {
 
 nav ul li a{
     color: #B45F04;
+    font-weight: bold;
     text-align: left;
     text-decoration: none;
 }
@@ -113,6 +135,7 @@ footer {
     height: 300px;
     overflow-y:scroll;
     width: 30%;
+    z-index: 1000;
 }
 
 #datosPersonales h1 {
@@ -129,7 +152,7 @@ footer {
 .fotoSobreMi {
     border: 1px solid blue;
 	border-radius: 0.5em;
-    z-index: 1001;
+
 }
 
 article.marcoInfo {
