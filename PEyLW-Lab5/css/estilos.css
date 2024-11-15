@@ -1,1 +1,210 @@
-
+@font-face {
+	font-family: "Exo-Regular";
+	font-style: normal;
+	font-weight: normal; 	 
+	src: local("Exo-Regular"),url(Exo-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: "Sofia-Regular";
+	font-style: normal;
+	font-weight: normal; 	 
+	src: local("Sofia-Regular"),url(Sofia-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: "Satisfy-Regular";
+	font-style: normal;
+	font-weight: normal; 	 
+	src: local("Satisfy-Regular"),url(Satisfy-Regular.ttf) format('truetype');
+}
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Exo-Regular", Helvetica, Verdana;
+    color: black;
+    font-size: 1em;
+    margin: 0em auto;
+    text-align: center;
+    min-width: 1000px;
+}
+header, nav, main, footer {
+    border-color: rgb(65, 63, 63);
+    border-style: solid;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    width:100%;
+    padding: 0.5em 1em;
+    z-index: 1001;
+}
+#porcionFija {
+    height: calc(100px + 3em);
+}
+header {
+    background-color: #14569a;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    color:white;
+    height:100px;
+    margin-top: 0em;
+    position: fixed;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+}
+header h1 {
+    font-family: "Satisfy-Regular", Helvetica, Verdana; 
+    font-size: 3em;
+    text-shadow: 0.1em 0.1em 0.1em rgb(29, 31, 12);
+    white-space: nowrap
+}
+header img {
+    animation: girar 4s linear 1;
+    height: 80px;
+    width: 80px;
+}
+@keyframes girar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+nav {
+    background-color:#85c1ec;
+    border-bottom-width: 2px;
+    height:3em;
+    font-family: "Sofia-Regular", Helvetica, Verdana;
+    list-style-type: none;
+    margin-top: 100px;
+    position: fixed;
+    text-align: left;
+}
+nav ul li {
+    background-color: rgb(226, 224, 224);
+    border: 1px solid green;
+    border-radius: 0.5em 0.5em 0.5em 0.5em ;
+    display: inline-block;
+    font-family: "Sofia-Regular", Helvetica, Verdana; 
+    list-style-type: none;
+    padding: 0.2em 0.5em;
+}
+nav ul li a{
+    color: #B45F04;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background-color: black;
+}
+main {
+    background-color: rgb(251, 225, 146);
+    text-align: left;
+}
+#arriba {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 10px;  
+    right: 10px;
+    z-index: 1001;
+}
+footer {
+    background-color:#85c1ec;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+}
+#sectionAcercaDe {
+    margin:auto;
+    width: 970px;
+}
+article.marcoInfo, article.marcoInfoCV, article.datosAcercaDe,article.encapCV  {
+	background-color: #c1daf7;
+    border: 1px solid black;
+   	box-shadow: 0.5em 0.5em 0.5em black;
+	display: block;
+	margin-bottom: 1em;
+  	padding: 1em;
+	text-align: left;
+}
+article.datosAcercaDe {
+    height: 300px;
+    overflow-y:scroll;
+  	padding: 0 0.5em;
+}
+article.encapCV {
+    display: flex;
+}
+article.marcoInfoCV {
+	display: none;
+}
+span.primerLinea {
+    background-color: gainsboro;
+	position: sticky;
+    color:black;
+    top: 0;
+}
+.fotoSobreMi {
+    border: 1px solid blue;
+	border-radius: 0.5em;
+}
+button.boton{    
+    cursor: pointer;
+    border: 1px solid blue;
+	border-radius: 0.5em;
+}
+ul.viñetas{
+    padding: 0.5em;
+}
+form * {
+	display: block;
+	text-align: left;
+}
+fieldset {
+	border: 2px solid gray;
+    padding: 0.5em;
+}
+.fieldForm {
+	display: inline-block;
+}
+.fieldForm abbr {
+	display: inline-block;
+}
+input {
+	border: 1px solid green;
+	width: 100%;
+}
+datalist {
+	display: none;
+}
+.boton{
+    border: 1px solid red;
+	display: inline-block;
+	margin: 0.5em;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+	text-align: center;
+	width: auto;
+}
+.campoRequerido {
+	color: red;
+	text-decoration: none;
+}
+.tablaFormulario {
+   margin:auto;
+}
+table, th, td {
+    border: 1px solid blue;
+	border-collapse: collapse;
+	padding: 0.2em;
+	margin: 0;
+}
+th {
+	background-color:mediumseagreen;
+}
+td {
+	background-color:rgb(251, 225, 146);
+}
