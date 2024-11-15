@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Leandro Corvalan</title>
+    <LINK REL=StyleSheet HREF="css/estilos.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+    <header>
+        <h1>Pagina personal de Andrés Leandro Corvalan</h1>
+        <img src="img/logo_curza.png" alt="logoCURZA">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercade.html">Acerca de ...</a></li>
+        </ul>
+    </nav>
+    <div id="porcionFija"></div>
+    <main>
+        <article class="marcoInfo">
+            <h1>Formulario de contacto</h1>
+
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Datos Personales</legend> 
+                    <div class="fieldForm">
+                        <label for="fNombre">Nombre:<abbr title="Ingrese su nombre (obligatorio)" class="campoRequerido">*</abbr></label>
+                        <input type="text" id="fNombre" placeholder="Debe ingresar su nombre" maxlength="20" pattern="[A-Za-z ]*" required>
+                    </div>                   
+                    <div class="fieldForm">
+                        <label for="fApellido">Apellido:</label>
+                        <input type="text" id="fApellido" placeholder="Ingrese su apellido" maxlength="20" pattern="[A-Za-z ]*">
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fEdad">Edad (entre 16 y 120 años):</label>
+                        <input type="number" id="fEdad" placeholder="Ingrese su Edad" min=16 max=120>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de contacto</legend> 
+                    <div class="fieldForm">
+                        <label for="fEmail">Correo electr&oacute;nico:<abbr title="Ingrese un email (usuario@dominio) (obligatorio)" class="campoRequerido">*</abbr></label>
+                        <input type="email" id="fEmail" placeholder="Debe ingresar un email" required>
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fTelefono">Tel&eacute;fono:</label>
+                        <input type="tel" id="fTelefono" placeholder="Ingrese un n° de tel&eacute;fono">
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fDireccion">Direcci&oacute;n:</label>
+                        <input type="text" id="fDireccion" placeholder="Ingrese su direcci&oacute;n">
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fProvincia">Provincia:</label>
+                        <input type="text" id="fProvincia" list="provPat" placeholder="Ingrese su provincia">
+                        <datalist id="provPat">
+                            <option value="La Pampa">
+                            <option value="Rio Negro">
+                            <option value="Nauquen">
+                            <option value="Chubut">
+                            <option value="Santa Cruz">
+                            <option value="Tierra del Fuego">
+                        </datalist>
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fCodigoPostal">C&oacute;digo Postal:</label>
+                        <input type="text" id="fCodigoPostal" placeholder="Ingrese su c&oacute;digo postal" pattern="[A-Z]\d{4}[A-Z]{3}">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Metodo de contacto preferido</legend>
+                    <div class="fieldForm">
+                        <label for="fMetPrefTel">Tel&eacute;fono</label>
+                        <input type="radio" id="fMetPrefTel" name="fMetodoPreferido" value="Tel">
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fMetPrefEmail">Correo electr&oacute;nico</label>
+                        <input type="radio" id="fMetPrefEmail" name="fMetodoPreferido" value="email">
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fMetPrefCorreoPos">C&oacute;digo Postal</label>
+                        <input type="radio" id="fMetPrefCorreoPos" name="fMetodoPreferido" value="correoPos">
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Tipo de suscripci&oacute;n</legend>
+                    <div class="fieldForm">
+                        <label for="fNoticias"> Noticias</label>
+                        <input type="checkbox" id="fNoticias" name="fSuscripcion" value="Noticias">
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fPromociones">Promocioenes</label>
+                        <input type="checkbox" id="fPromociones" name="fSuscripcion" value="Promociones">
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fAlertas">Alertas</label>
+                        <input type="checkbox" id="fAlertas" name="fSuscripcion" value="Alertas">
+                    </div>
+                    <div class="fieldForm">
+                        <label for="fEventos">Eventos</label>
+                        <input type="checkbox" id="fEventos" name="fSuscripcion" value="Eventos">
+                    </div>
+                </fieldset>
+                <input type="submit" class="boton" value="Enviar">
+                <input type="reset" class="boton" value="Limpir campos">
+            </form>
+        </article>
+
+        <article class="marcoInfo">
+        <table class="tablaFormulario">
+            <thead>
+            <tr>
+                <th>Campo del formulario</th>
+                <th>Valor del campo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Nombre</td>
+                <td id="campoNombre"></td>
+            </tr>
+            <tr>
+                <td>Apellido</td>
+                <td id="campoApellido"></td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td id="campoEdad"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td id="campoEmail"></td>
+            </tr>
+            <tr>
+                <td>Tel&eacute;fono</td>
+                <td id="campoTel"></td>
+            </tr>
+            <tr>
+                <td>Direcci&oacute;n</td>
+                <td id="campoDir"></td>
+            </tr>
+            <tr>
+                <td>Provincia</td>
+                <td id="campoProv"></td>
+            </tr>
+            <tr>
+                <td>C&oacute;digo Postal</td>
+                <td id="campoCodPos"></td>
+            </tr>
+            <tr>
+                <td>M&eacute;todo preferido de contacto</td>
+                <td id="campoMetContacto"></td>
+            </tr>
+            <tr>
+                <td>Suscripci&oacute;n a Noticias</td>
+                <td id="campoSuscripNoticias"></td>
+            </tr>
+            <tr>
+                <td>Suscripci&oacute;n a Promociones</td>
+                <td id="campoSuscripPromociones"></td>
+            </tr>
+            <tr>
+                <td>Suscripci&oacute;n a Alertas</td>
+                <td id="campoSuscripAlertas"></td>
+            </tr>
+            <tr>
+                <td>Suscripci&oacute;n a Eventos</td>
+                <td id="campoSuscripEventos"></td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+    <a href="#porcionFija"> <img id="arriba" src="img/flecha_arriba.png" alt="logoCURZA"></a>
+    </main>
+    <footer>
+        <img src="img/cc-by-sa.png" alt="CC-BY-SA" width="100">
+        <p>Universidad Nacional de Comahue - Zona Atlántica - Nodo Maquinchao - Andr&eacute;s Corvalan</p>
+    </footer>
+
+   
+    <script src="js/scriptContacto.js"></script>
+</body>
+</html>
