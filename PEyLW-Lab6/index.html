@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Leandro Corvalan</title>
+    <LINK REL=StyleSheet HREF="css/estilos.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+    <header>
+        <h1>Pagina personal de Andrés Leandro Corvalan</h1>
+        <img src="img/logo_curza.png" alt="logoCURZA">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="juego.html">A jugar ...</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercade.html">Acerca de ...</a></li>
+        </ul>
+    </nav>
+    <div id="porcionFija"></div>
+    <main>
+        <article class="marcoInfo">
+        <h2>Laboratorio 2</h2>
+        <p>Teniendo en cuenta el procedimiento indicado en 
+            <a href="https://github.com/uncoma-curza-lab/PEyLW-2024/blob/main/README.md"> 
+            Readme.md</a> hacer una primera página web de presentación del alumno. Reemplazar
+            "Nombre y Apellido" por lo que corresponda. El archivo "index.html" deberá contener 
+            la estructuraautochivo debe llamarse "acercade.html". El header debe incluir el título de 
+            la página conteniendo nombre y apellido e indicando que es la página personal. 
+            En acercade.html debe incluirse una breve biografía y una foto, no tiene por qué ser 
+            la del alumno pero es recomendable que así sea. Las fotos pueden enlazarse a sitios 
+            externos o guardarla en un subdirectorio llamado img/. El footer debe contener 
+            información de copyright y la dirección de la universidad o el nodo correspondiente.
+        </p>
+        <p>Nav debe enlazar a Inicio ("index.html") y Acerca de ("acercade.html) al menos, puede
+            añadir más enlaces de desearlo.
+        </p>
+        <p>Por último, enlazar el mismo archivo CSS con los estilos básicos para dar un primer 
+            formato a sus páginas html. El archivo debe estar en el mismo directorio base de sus
+            páginas.
+        </p>
+        </article>
+        <article class="marcoInfo">
+        <h2>Laboratorio 3</h2>
+        <p></p>Crear una página nueva que deberá estar enlazada con la página principal del laboratorio anterior como “Contacto”
+        En esta página se debe crear un formulario que contenga los siguientes campos:</p>
+        <ul class="viñetas">
+            <li>Nombre (longitud máxima 20 caracteres), requerido.</li>
+            <li>Apellido (longitud máxima 20 caracteres).</li>
+            <li>Email, requerido.</li>
+            <li>Teléfono, debe contar con una ayuda que se borre al hacer clic en el campo.</li>
+            <li>Edad: mínimo 16 y máximo 120 años.</li>
+            <li>Dirección: campo de texto libre.</li>
+            <li>Provincia: texto, debe ser libre pero las provincias patagónicas deberán estar incluidas y sugerirse al usuario con una lista.</li>
+            <li>Código postal: controlado con una expresión regular que incluya A1234ABC.</li>
+            <li>Elección de método preferido de contacto entre “correo electrónico”, “correo postal” o “teléfono” (excluyentes, usar radio button), 
+                por defecto debe salir “correo electrónico” como preferido.</li>
+            <li>Elección del tipo de suscripción entre: noticias, promociones, alertas y eventos, el usuario debe poder elegir más de una. 
+                Alertas debe estar seleccionado por defecto. Usar checkbox.</li>
+            <li>Incluir un botón de cargar (por ahor no hará nada).</li>
+            <li>Luego incluir una tabla vacía con dos columnas, en la columna izquierda deben ir los mismos ítems del formulario (títulos) y la de 
+                la derecha vacía (se rellenará la opción al apretar el botón de cargar cuando veamos javascript).</li>
+        </ul>
+        </article>
+        <article class="marcoInfo">
+            <h2>Laboratorio 4</h2>
+            <p>Modificar las páginas creadas hasta el momento añadiendo:</p>
+            <ul class="viñetas">
+                <li>Formato correcto para tabla y formularios para una visualización correcta.</li>
+                <li>Incluir el uso de al menos una fuente web.</li>
+                <li>Animar el título principal incluyendo a la derecha el logo del CURZA. Este logo deberá dar un giro completo sobre el eje vertical y terminar de forma correcta.</li>
+            </ul>
+            <p>Posicionamiento:</p>
+            <ul class="viñetas">
+                <li>En todas las páginas se debe ver un encabezado fijo en la parte superior aunque el usuario avance en la pantalla.</li>
+                <li>Modificar el texto del “Acerca de” de forma que la primera línea se vea fija (sticky). El artículo deberá tener un alto máximo de 300px y en caso de ser necesario se deberá mostrar una barra de desplazamiento.</li>
+                <li>En cada página debe añadirse una flecha apuntando hacia arriba dentro de un círculo al final de la página hacia la derecha que permita volver al inicio al hacer clic.</li>
+                <li>Provincia: texto, debe ser libre pero las provincias patagónicas deberán estar incluidas y sugerirse al usuario con una lista.</li>
+            </ul>
+        </article>
 
+        <article class="marcoInfo">
+            <h2>Laboratorio 5</h2>
+            <p>Modificar las páginas creadas hasta el momento añadiendo:</p>
+            <ul class="viñetas">
+                <li>Crear un archivo script.js.</li>
+                <li>Vincular el archivo al HTML del formulario.</li>
+                <li>Añadir interactividad: Todo lo cargado en el formulario debe reflejarse en la tabla inferior al terminar de rellenar cada campo (sin necesidad de botones).</li>
+                <li>En la página de "Acerca de" hacer un botón de "Leer más". Deberá mostrarse el currículum de manera abreviada y al hacer clic en el botón de leer más, deberá revelarse el CV completo (rellenar con Lorem Ipsum si es necesario).</li>
+            </ul>
+        </article>
+        <article class="marcoInfo">
+            <h2>Laboratorio 6</h2>
+            <ul class="viñetas">
+                <li>Completar y refinar la página personal con todos los elementos anteriores.</li>
+                <li>Crear una subpágina o sección para el juego.</li>
+                <li>Desarrollar uno de los siguientes juegos utilizando JavaScript:
+                    <ol>
+                        <li>Juego de Adivinanza de Números: El usuario intenta adivinar un número generado aleatoriamente por el sistema.</li>
+                        <li>Juego de Adivinanza de Números: El usuario intenta adivinar un número generado aleatoriamente por el sistema.</li>
+                        <li>Juego de Preguntas y Respuestas: Un juego de trivia sobre un tema específico.</li>
+                        <li>Juego de Memoria con Cartas: Un juego donde el usuario debe emparejar cartas iguales.</li>
+                        <li>Juego de Piedra, Papel o Tijera: El clásico juego donde el usuario juega contra la computadora.</li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <a href="#porcionFija"> <img id="arriba" src="img/flecha_arriba.png" alt="logoCURZA"></a>
+    </main>
+    <footer>
+        <img src="img/cc-by-sa.png" alt="CC-BY-SA" width="100">
+        <p>Universidad Nacional de Comahue - Zona Atlántica - Nodo Maquinchao - Andr&eacute;s Corvalan</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Leandro Corvalan</title>
+    <LINK REL=StyleSheet HREF="css/estilos.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+    <header>
+        <h1>Pagina personal de Andrés Leandro Corvalan</h1>
+        <img src="img/logo_curza.png" alt="logoCURZA">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="juego.html">Acerca de ...</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercade.html">Acerca de ...</a></li>
+        </ul>
+    </nav>
+    <div id="porcionFija"></div>
+    <main>
+        <article class="marcoInfo">
+        <h2>A Jugar.....</h2> 
+        <div class="tituloJuego"> El Cl&aacutesico juego de 
+            Piedra <img class="logoPiedraPapelTijera" src="img/piedra.png" alt="imgPiedra">, 
+            Papel  <img class="logoPiedraPapelTijera" src="img/papel.png" alt="imgPapel">, 
+            Tijera <img class="logoPiedraPapelTijera" src="img/tijera.png" alt="imgTijera">
+        </div>
+        <div class="juego">
+
+            <p>Elige entre Piedra, Papel o Tijera, ¿Quien gana?:</p>
+            <p><img class="logoPiedraPapelTijera" src="img/piedra.png" alt="imgPiedra"> le gana a <img class="logoPiedraPapelTijera" src="img/tijera.png" alt="imgTijera"></p>
+            <p><img class="logoPiedraPapelTijera" src="img/tijera.png" alt="imgTijera"> le gana a <img class="logoPiedraPapelTijera" src="img/papel.png" alt="imgPapel"></p>
+            <p><img class="logoPiedraPapelTijera" src="img/papel.png" alt="imgPapel"> le gana a <img class="logoPiedraPapelTijera" src="img/piedra.png" alt="imgPiedra"></p>
+
+            <button class="jugar" id="botJugar">Iniciar juego</button>
+
+            <div class="contenedorPunioAnimado" id="contPunio">
+                <img  id="punio" src="img/puño.png" alt="Imagen de un Puño">
+                <img class="imgEleccion" id="piedra" src="img/piedra.png" alt="Imagen de una Piedra"> 
+                <img class="imgEleccion" id="papel" src="img/papel.png" alt="Imagen de una Tijera"> 
+                <img class="imgEleccion" id="tijera" src="img/tijera.png" alt="Imagen de un Papel">
+                <h2 id="resultado"></h2>
+            </div>
+            <div class="botonOpcion">
+                <button class="botElegir" id="botPiedra">
+                    <img class="logoPiedraPapelTijera" src="img/piedra.png" alt="imgPiedra"> 
+                </button>
+                <button class="botElegir" id="botPapel">
+                    <img class="logoPiedraPapelTijera" src="img/papel.png" alt="imgPapel">
+                </button>
+                <button class="botElegir" id="botTijera">
+                    <img class="logoPiedraPapelTijera" src="img/tijera.png" alt="imgTijera">
+                </button>
+            </div>
+        </div>
+
+        <a href="#porcionFija"> <img id="arriba" src="img/flecha_arriba.png" alt="logoCURZA"></a>
+    </main>
+    <footer>
+        <img src="img/cc-by-sa.png" alt="CC-BY-SA" width="100">
+        <p>Universidad Nacional de Comahue - Zona Atlántica - Nodo Maquinchao - Andr&eacute;s Corvalan</p>
+    </footer>
+    <script src="js/scriptJuego.js"></script>
+</body>
+</html>
